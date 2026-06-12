@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NexaStudio — Digital Experiences</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Clash Display + DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,300&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <!-- Phosphor Icons CDN -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-container">
+
+      <!-- Logo -->
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon"><i class="ph-fill ph-hexagon"></i></span>
+        <span class="logo-text">Nexa<span class="logo-accent">Studio</span></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Right controls -->
+      <div class="nav-controls">
+        <!-- Dark Mode Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <i class="ph ph-sun" id="themeIcon"></i>
+        </button>
+        <!-- Mobile Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home">
+    <!-- Decorative blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <div class="hero-content">
+      <span class="hero-badge reveal">✦ Award-Winning Digital Studio</span>
+      <h1 class="hero-heading reveal">
+        We Craft<br/>
+        <em>Digital</em><br/>
+        Experiences
+      </h1>
+      <p class="hero-sub reveal">
+        Strategy, design, and technology — fused into products<br class="hide-mobile"/>
+        that captivate and convert.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#services" class="btn btn-primary">
+          Explore Work <i class="ph ph-arrow-right"></i>
+        </a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+      <!-- Metrics strip -->
+      <div class="hero-metrics reveal">
+        <div class="metric"><strong>120+</strong><span>Projects</span></div>
+        <div class="metric-divider"></div>
+        <div class="metric"><strong>98%</strong><span>Satisfaction</span></div>
+        <div class="metric-divider"></div>
+        <div class="metric"><strong>8yr</strong><span>Experience</span></div>
+      </div>
+    </div>
+
+    <!-- Floating card decoration -->
+    <div class="hero-card-decoration reveal-right">
+      <div class="float-card card-a">
+        <i class="ph-fill ph-sparkle"></i>
+        <p>UI/UX Design</p>
+      </div>
+      <div class="float-card card-b">
+        <i class="ph-fill ph-code"></i>
+        <p>Development</p>
+      </div>
+      <div class="float-card card-c">
+        <i class="ph-fill ph-chart-line-up"></i>
+        <p>Growth</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section class="services" id="services">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-tag">What We Do</span>
+        <h2>Services Built<br/><em>for Impact</em></h2>
+        <p>End-to-end solutions that take your ideas from concept to launch.</p>
+      </div>
+
+      <div class="cards-grid">
+
+        <!-- Card 1 -->
+        <article class="service-card reveal" data-delay="0">
+          <div class="card-icon-wrap" style="--card-color: #FF6B6B;">
+            <i class="ph-fill ph-paint-brush-broad"></i>
+          </div>
+          <h3>UI/UX Design</h3>
+          <p>Research-driven design that delights users and drives measurable outcomes. From wireframes to polished interfaces.</p>
+          <ul class="card-features">
+            <li><i class="ph ph-check-circle"></i> User Research & Personas</li>
+            <li><i class="ph ph-check-circle"></i> Wireframing & Prototyping</li>
+            <li><i class="ph ph-check-circle"></i> Design Systems</li>
+          </ul>
+          <a href="#contact" class="card-cta">Start a project <i class="ph ph-arrow-up-right"></i></a>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="service-card featured reveal" data-delay="150">
+          <div class="featured-badge">Most Popular</div>
+          <div class="card-icon-wrap" style="--card-color: #4ECDC4;">
+            <i class="ph-fill ph-code-block"></i>
+          </div>
+          <h3>Web Development</h3>
+          <p>Performant, scalable web applications built with modern stacks. We turn complex problems into elegant code.</p>
+          <ul class="card-features">
+            <li><i class="ph ph-check-circle"></i> React / Next.js</li>
+            <li><i class="ph ph-check-circle"></i> Node.js APIs</li>
+            <li><i class="ph ph-check-circle"></i> CMS Integration</li>
+          </ul>
+          <a href="#contact" class="card-cta">Start a project <i class="ph ph-arrow-up-right"></i></a>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="service-card reveal" data-delay="300">
+          <div class="card-icon-wrap" style="--card-color: #A78BFA;">
+            <i class="ph-fill ph-trend-up"></i>
+          </div>
+          <h3>Digital Strategy</h3>
+          <p>Data-backed strategy and growth frameworks that align your digital presence with business objectives.</p>
+          <ul class="card-features">
+            <li><i class="ph ph-check-circle"></i> SEO & Performance</li>
+            <li><i class="ph ph-check-circle"></i> Analytics Setup</li>
+            <li><i class="ph ph-check-circle"></i> Conversion Optimisation</li>
+          </ul>
+          <a href="#contact" class="card-cta">Start a project <i class="ph ph-arrow-up-right"></i></a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="about" id="about">
+    <div class="section-container about-grid">
+
+      <!-- Image side -->
+      <div class="about-visual reveal">
+        <div class="about-img-wrap">
+          <!-- SVG illustration placeholder -->
+          <div class="about-avatar">
+            <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-label="Team illustration">
+              <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#FF6B6B;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#A78BFA;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#4ECDC4;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#A78BFA;stop-opacity:0.6" />
+                </linearGradient>
+              </defs>
+              <!-- Background circle -->
+              <circle cx="200" cy="200" r="190" fill="url(#grad1)" opacity="0.12"/>
+              <!-- Person silhouette -->
+              <circle cx="200" cy="145" r="60" fill="url(#grad1)" opacity="0.9"/>
+              <ellipse cx="200" cy="310" rx="95" ry="75" fill="url(#grad2)" opacity="0.85"/>
+              <!-- Decorative dots -->
+              <circle cx="80" cy="80" r="10" fill="#FF6B6B" opacity="0.5"/>
+              <circle cx="320" cy="90" r="16" fill="#4ECDC4" opacity="0.5"/>
+              <circle cx="330" cy="310" r="10" fill="#A78BFA" opacity="0.5"/>
+              <circle cx="60" cy="300" r="14" fill="#FF6B6B" opacity="0.4"/>
+              <!-- Floating shapes -->
+              <rect x="40" y="170" width="30" height="30" rx="8" fill="#A78BFA" opacity="0.4" transform="rotate(20 55 185)"/>
+              <rect x="320" y="180" width="24" height="24" rx="6" fill="#4ECDC4" opacity="0.5" transform="rotate(-15 332 192)"/>
+            </svg>
+          </div>
+          <!-- Floating stat cards on image -->
+          <div class="img-stat stat-top">
+            <i class="ph-fill ph-trophy" style="color:#FF6B6B;"></i>
+            <div><strong>12</strong><span>Awards</span></div>
+          </div>
+          <div class="img-stat stat-bottom">
+            <i class="ph-fill ph-users" style="color:#4ECDC4;"></i>
+            <div><strong>50+</strong><span>Happy Clients</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text side -->
+      <div class="about-text reveal">
+        <span class="section-tag">About Us</span>
+        <h2>A Studio Obsessed<br/>with <em>Craft</em></h2>
+        <p class="about-lead">
+          We're a multidisciplinary team of designers, engineers, and strategists who believe that great digital experiences change how people feel about brands.
+        </p>
+        <p>
+          Founded in 2016, NexaStudio has partnered with startups and Fortune 500s alike — helping them ship faster, design smarter, and grow with confidence.
+        </p>
+
+        <div class="about-values">
+          <div class="value-item">
+            <span class="value-icon"><i class="ph-fill ph-lightning"></i></span>
+            <div>
+              <strong>Fast Delivery</strong>
+              <p>We respect your roadmap. On-time, every time.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <span class="value-icon"><i class="ph-fill ph-lock-key"></i></span>
+            <div>
+              <strong>Transparent Process</strong>
+              <p>Weekly updates and no surprise invoices.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <span class="value-icon"><i class="ph-fill ph-heart"></i></span>
+            <div>
+              <strong>Long-Term Partners</strong>
+              <p>We build relationships, not just products.</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn btn-primary">Work With Us <i class="ph ph-arrow-right"></i></a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="contact" id="contact">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get In Touch</span>
+        <h2>Let's Build<br/><em>Something Great</em></h2>
+        <p>Have a project in mind? Drop us a message and we'll get back within 24 hours.</p>
+      </div>
+
+      <div class="contact-wrapper reveal">
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="ph-fill ph-envelope"></i>
+            <div>
+              <strong>Email Us</strong>
+              <span>hello@nexastudio.com</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="ph-fill ph-map-pin"></i>
+            <div>
+              <strong>Location</strong>
+              <span>San Francisco, CA</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="ph-fill ph-clock"></i>
+            <div>
+              <strong>Response Time</strong>
+              <span>Within 24 hours</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <!-- Name Field -->
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" autocomplete="name" />
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <!-- Email Field -->
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" autocomplete="email" />
+              <span class="form-error" id="emailError"></span>
+            </div>
+          </div>
+          <!-- Message Field -->
+          <div class="form-group full-width">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..."></textarea>
+            <span class="form-error" id="messageError"></span>
+          </div>
+          <!-- Submit -->
+          <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+            <span class="btn-text">Send Message</span>
+            <i class="ph ph-paper-plane-tilt"></i>
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="ph-fill ph-check-circle"></i> Message sent! We'll be in touch soon.
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo">
+          <span class="logo-icon"><i class="ph-fill ph-hexagon"></i></span>
+          <span class="logo-text">Nexa<span class="logo-accent">Studio</span></span>
+        </a>
+        <p>Crafting digital experiences that move people and businesses forward.</p>
+        <!-- Social Icons -->
+        <div class="social-links">
+          <a href="#" class="social-btn" aria-label="Twitter"><i class="ph ph-twitter-logo"></i></a>
+          <a href="#" class="social-btn" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+          <a href="#" class="social-btn" aria-label="Dribbble"><i class="ph ph-dribbble-logo"></i></a>
+          <a href="#" class="social-btn" aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-links">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">UI/UX Design</a></li>
+          <li><a href="#">Web Development</a></li>
+          <li><a href="#">Digital Strategy</a></li>
+          <li><a href="#">Brand Identity</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 NexaStudio. All rights reserved.</p>
+      <p>Made with <i class="ph-fill ph-heart" style="color:#FF6B6B;"></i> &amp; strong coffee.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="ph ph-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
