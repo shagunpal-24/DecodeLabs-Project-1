@@ -41,6 +41,9 @@ project-1/
 ├── script.js
 │
 └── README.md
+screenshots/
+├── desktop-view.png
+└── mobile-view.png
 ```
 
 ## 🎯 Learning Outcomes
@@ -71,12 +74,11 @@ The website is fully responsive and optimized for:
 
 ### Desktop View
 
-(Add screenshot here)
+![Desktop View](screenshots/desktop-view.png)
 
 ### Mobile View
 
-(Add screenshot here)
-
+![Mobile View](screenshots/mobile-view.png)
 ---
 
 ## 👨‍💻 Author
